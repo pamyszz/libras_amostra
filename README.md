@@ -1,6 +1,6 @@
 # 🤲 Hand Gesture Recognition 🅰️🅱️
 <img src="/image.png" alt="Exemplo de Detecção" width="600" />
-This project uses the **MediaPipe** library to detect and recognize hand gestures and identify letters of the alphabet from A to E. The application uses the camera to capture hand gestures in real-time and displays the corresponding letters on the screen.
+This project uses the MediaPipe library to detect and recognize hand gestures and identify letters of the alphabet from A to E. The application uses the camera to capture hand gestures in real-time and displays the corresponding letters on the screen.
 
 ## ✨ Features
 - **Gesture Recognition** 🤖: Through the camera, the system identifies hand gestures representing the letters A to E.
