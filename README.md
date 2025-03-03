@@ -1,50 +1,50 @@
 # 🤲 Hand Gesture Recognition 🅰️🅱️
 <img src="/image.png" alt="Exemplo de Detecção" width="600" />
-Este projeto utiliza a biblioteca **MediaPipe** para detectar e reconhecer gestos de mãos e identificar letras do alfabeto de A a E. A aplicação usa a câmera para capturar os gestos das mãos em tempo real e exibe as letras correspondentes na tela.
+This project uses the **MediaPipe** library to detect and recognize hand gestures and identify letters of the alphabet from A to E. The application uses the camera to capture hand gestures in real-time and displays the corresponding letters on the screen.
 
-## ✨ Funcionalidades
-- **Reconhecimento de Gestos** 🤖: Através da câmera, o sistema identifica gestos das mãos que representam as letras de A a E.
-- **Desenho dos Landmarks** ✍️: O MediaPipe desenha os pontos de referência das mãos, permitindo uma visualização clara do que está sendo processado.
-- **Exibição das Letras** 🔠: Quando um gesto é reconhecido, a letra correspondente é exibida na tela.
-- **Tela em Tempo Real** 📹: A captura de vídeo é feita em tempo real e as letras são atualizadas conforme a detecção dos gestos.
+## ✨ Features
+- **Gesture Recognition** 🤖: Through the camera, the system identifies hand gestures representing the letters A to E.
+- **Drawing Landmarks** ✍️: MediaPipe draws the hand landmarks, allowing for a clear visualization of what is being processed.
+- **Letter Display** 🔠: When a gesture is recognized, the corresponding letter is displayed on the screen.
+- **Real-time Video Feed** 📹: The video feed is processed in real-time, and the letters are updated as the gestures are detected.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 - **Python 3.x** 🐍
-- **OpenCV** 📸: Para captura de vídeo e processamento de imagens.
-- **MediaPipe** ✋: Para a detecção e análise dos landmarks das mãos.
-- **Matplotlib** 📊 (se necessário para exibição de gráficos, embora não esteja presente neste código específico).
+- **OpenCV** 📸: For video capture and image processing.
+- **MediaPipe** ✋: For detecting and analyzing hand landmarks.
+- **Matplotlib** 📊 (if needed for graph display, though not used in this specific code).
 
-## ⚙️ Requisitos
-Certifique-se de ter os seguintes pacotes Python instalados:
+## ⚙️ Requirements
+Make sure you have the following Python packages installed:
 - `opencv-python`
 - `mediapipe`
-- `math` (integrado no Python)
+- `math` (integrated in Python)
 
-Você pode instalar as dependências com o comando:
+You can install the dependencies with the following command:
 ```bash
 pip install opencv-python mediapipe
 ```
 
-## 🚀 Como Usar
-1. **Conecte a sua câmera** 📷: Certifique-se de que sua câmera esteja conectada ao seu dispositivo. O código usa a câmera em `/dev/video1`. Se necessário, ajuste para o dispositivo correto.
-2. **Execute o Script** ▶️: Basta rodar o arquivo Python. O script irá abrir uma janela mostrando a captura da sua câmera com os gestos sendo analisados em tempo real.
+## 🚀 How to Use
+1. **Connect Your Camera** 📷: Ensure your camera is connected to your device. The code uses the camera located at `/dev/video1`. If necessary, adjust to the correct device.
+2. **Run the Script** ▶️: Simply run the Python file. The script will open a window showing the video feed from your camera with the hand gestures being processed in real-time.
    ```bash
    python hand_gesture_recognition.py
    ```
    
-3. **Gestos Reconhecidos** 🤲:
-   - **A**: Polegar para cima e indicador dobrado.
-   - **B**: Todos os dedos estendidos e juntos.
-   - **C**: Forma de "C" com a mão.
-   - **D**: Polegar dobrado e os outros dedos estendidos.
-   - **E**: Todos os dedos curvados sobre a palma.
+3. **Recognized Gestures** 🤲:
+   - **A**: Thumb up and index finger bent.
+   - **B**: All fingers extended and together.
+   - **C**: A "C" shape with the hand.
+   - **D**: Thumb bent and the other fingers extended.
+   - **E**: All fingers curled over the palm.
 
-4. **Fechar a Aplicação** ❌: Para fechar a aplicação, basta pressionar a tecla `q` enquanto a janela estiver aberta.
+4. **Close the Application** ❌: To close the application, simply press the `q` key while the window is open.
 
 
-## 🧑‍💻 Estrutura do Código
+## 🧑‍💻 Code Structure
 
-- **`distance(a, b)`**: Função para calcular a distância euclidiana entre dois pontos.
-- **Funções de Identificação de Letras** 🔠: As funções `is_letter_a()`, `is_letter_b()`, `is_letter_c()`, `is_letter_d()` e `is_letter_e()` são responsáveis por verificar se os gestos das mãos correspondem a uma das letras de A a E.
-- **Captura de Vídeo e Processamento de Imagem** 📸: O código captura imagens da câmera, converte para RGB e processa usando o MediaPipe para detectar os landmarks das mãos.
-- **Exibição de Letras** 🔠: Se um gesto correspondente for identificado, o nome da letra é exibido na tela.
+- **`distance(a, b)`**: Function to calculate the Euclidean distance between two points.
+- **Letter Identification Functions** 🔠: The functions `is_letter_a()`, `is_letter_b()`, `is_letter_c()`, `is_letter_d()`, and `is_letter_e()` are responsible for checking if the hand gestures correspond to one of the letters A to E.
+- **Video Capture and Image Processing** 📸: The code captures images from the camera, converts them to RGB, and processes them using MediaPipe to detect hand landmarks.
+- **Letter Display** 🔠: If a corresponding gesture is identified, the name of the letter is displayed on the screen.
