@@ -1,5 +1,5 @@
 # 🤲 Hand Gesture Recognition 🅰️🅱️
-![Exemplo de Detecção](https://imgur.com/a2QUz7d.gif)
+img = 
 Este projeto utiliza a biblioteca **MediaPipe** para detectar e reconhecer gestos de mãos e identificar letras do alfabeto de A a E. A aplicação usa a câmera para capturar os gestos das mãos em tempo real e exibe as letras correspondentes na tela.
 
 ## ✨ Funcionalidades
